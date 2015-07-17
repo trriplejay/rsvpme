@@ -1,0 +1,13 @@
+<template name="menuItem">
+
+  <div class="menuItem well well-lg" data-id="{{_id}}">
+    <h3>{{title}}</h3>
+    <h4>{{description}}</h4>
+
+    {{ #each sides }}
+
+      <p><b>{{name}}: </b> {{description}}</p>
+
+    {{ /each }}
+  </div>
+</template>
