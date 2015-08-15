@@ -1,7 +1,19 @@
 <body>
+  <div class="text-center">
+    <h1>RSVP Here!</h1>
+    <h2>for the wedding of Cathryn Zhang and Jay Stockbauer</h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      {{>groupForm}}
+    </div>
+  </div>
+
   <div class="menuItems">
     {{#each menuItems}}
       {{>menuItem}}
     {{/each}}
   </div>
+
 </body>

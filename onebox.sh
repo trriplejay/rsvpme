@@ -7,4 +7,4 @@ docker run --privileged --net=host --restart=always -d --name=rsvpme \
     -e ROOT_URL=http://localhost \
     -e MONGO_URL=mongodb://localhost:27017 \
     -p 3000:54321 \
-    trriplejay/rsvpme:test
+    trriplejay/rsvpme:latest

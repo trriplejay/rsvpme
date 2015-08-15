@@ -1,0 +1,54 @@
+<template name="groupForm">
+  <form>
+
+
+    <h3>
+      Your details
+    </h3>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" name="email" class="form-control" placeholder="johndoe@gmail.com"/>
+    </div>
+
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="primaryFirst" class="form-control" placeholder="your first name"/>
+    </div>
+
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" name="primaryLast" class="form-control" placeholder="your last name"/>
+    </div>
+
+    <h3>
+      guest details
+    </h3>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" name="guestFirst" class="form-control" placeholder="guest first name"/>
+    </div>
+
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" name="guestLast" class="form-control" placeholder="guest last name"/>
+    </div>
+
+
+    <h3>
+      Are you bringing children?
+    </h3>
+    <div class="form-group">
+      <label>Children?</label>
+      <input type="radio" name="children" value="yes" class="form-control"/>Yes
+      <input type="radio" name="children" value="no" class="form-control"/>No
+    </div>
+
+    <div class="form-group">
+      <label>Comments</label>
+      <textarea rows="4" cols="20" name="comments" class="form-control" placeholder="comments? questions? song requests?"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-primary btn-block">RSVP!</button>
+
+  </form>
+</template>
