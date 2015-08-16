@@ -14,8 +14,7 @@ fi
 #    -e MONGO_URL=mongodb://localhost:27017 \
 #    -p 54321:54321 \
 #    trriplejay/rsvpme:$version
-docker run --restart=always -d --name=rsvpme \
-    -v /var/run/docker.sock:/var/run/docker.sock \
+docker run --net=host --restart=always -d --name=rsvpme \
     -e ROOT_URL=http://localhost \
     -e MONGO_URL=mongodb://localhost:27017 \
     -p 54321:54321 \
