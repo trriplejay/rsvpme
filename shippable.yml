@@ -1,3 +1,25 @@
 language: node_js
 
-script: true
+archive: true
+
+before_script: 
+  - echo 'hi'
+
+script:
+  - sleep 5
+  - sleep 5
+  - sleep 5
+  - sleep 5
+  - sleep 5
+  - sleep 5
+  - sleep 5
+  - sleep 5
+
+after_script:
+  - echo 'hi'
+  
+after_success:
+  - echo 'hi'
+  
+after_failure:
+  - echo 'hi'
